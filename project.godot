@@ -44,7 +44,7 @@ glossary/default_case_sensitive=true
 layout/mode=0
 variables={}
 editor/timeline_editor_mode=1
-editor/last/resources=["res://penguin.dch"]
+editor/last/resources=["res://dialog/panda-timeline.dtl", "res://dialog/timeline.dtl", "res://dialog/penguin.dch", "res://dialog/panda.dch"]
 editor/visual_timeline_editor_sidebar=200.0
 text/autocontinue=true
 

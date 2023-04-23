@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b11ix0gfejh54"]
+[gd_scene load_steps=2 format=3 uid="uid://d0m1qnr8l640m"]
 
-[ext_resource type="Script" path="res://scenes/inventory_panel.gd" id="1_3smde"]
-[ext_resource type="PackedScene" uid="uid://cnfv4pv2vp8f0" path="res://items/SwordScene.tscn" id="2_tu3su"]
+[ext_resource type="Script" path="res://scripts/inventory_panel.gd" id="1_8mj3k"]
 
 [node name="InventoryPanel" type="Control"]
 layout_mode = 3
@@ -11,9 +10,8 @@ offset_top = 533.0
 offset_right = 385.0
 offset_bottom = 573.0
 scale = Vector2(2.24, 2.24)
-script = ExtResource("1_3smde")
+script = ExtResource("1_8mj3k")
 inventoryPosition = 1
-equippedItem = ExtResource("2_tu3su")
 
 [node name="Selected" type="ColorRect" parent="."]
 visible = false

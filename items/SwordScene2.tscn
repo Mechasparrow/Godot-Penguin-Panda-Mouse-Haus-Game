@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfvua8ggybbhf"]
+[gd_scene load_steps=3 format=3 uid="uid://tge7j2kosegw"]
 
 [ext_resource type="Script" path="res://scripts/UsableItem.gd" id="1_076kt"]
 [ext_resource type="Texture2D" uid="uid://cy0580xu3no33" path="res://sprites/penguin-main.png" id="2_yeqxl"]

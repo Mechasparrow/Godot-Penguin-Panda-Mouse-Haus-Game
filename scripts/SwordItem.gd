@@ -1,6 +1,5 @@
-class_name UsableItem extends Node2D
+extends UsableItem
 
-var classType = "UsableItem"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

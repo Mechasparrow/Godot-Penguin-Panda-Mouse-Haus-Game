@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://qlks3r5nvti4"]
 
 [ext_resource type="PackedScene" uid="uid://cyg24yqc1nbsh" path="res://prefabs/penguin.tscn" id="1_qhkc2"]
-[ext_resource type="PackedScene" uid="uid://b11ix0gfejh54" path="res://scenes/inventory_panel.tscn" id="2_32tar"]
+[ext_resource type="PackedScene" uid="uid://d0m1qnr8l640m" path="res://scenes/inventory_panel.tscn" id="2_32tar"]
+[ext_resource type="PackedScene" uid="uid://cnfv4pv2vp8f0" path="res://items/SwordItem.tscn" id="3_3becl"]
 [ext_resource type="Script" path="res://scripts/UsableItem.gd" id="3_qdldu"]
-[ext_resource type="PackedScene" uid="uid://dfvua8ggybbhf" path="res://items/SwordScene2.tscn" id="3_xufqn"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -26,6 +26,7 @@ offset_left = 1.0
 offset_top = 1.0
 offset_right = 41.0
 offset_bottom = 41.0
+equippedItem = ExtResource("3_3becl")
 
 [node name="InventoryPanel2" parent="InventorySystem" instance=ExtResource("2_32tar")]
 offset_left = 105.0
@@ -33,7 +34,7 @@ offset_top = 1.0
 offset_right = 145.0
 offset_bottom = 41.0
 inventoryPosition = 2
-equippedItem = ExtResource("3_xufqn")
+equippedItem = ExtResource("3_3becl")
 
 [node name="InventoryPanel3" parent="InventorySystem" instance=ExtResource("2_32tar")]
 offset_left = 204.0
@@ -41,6 +42,7 @@ offset_top = 1.0
 offset_right = 244.0
 offset_bottom = 41.0
 inventoryPosition = 3
+equippedItem = ExtResource("3_3becl")
 
 [node name="TheUsableItem" type="Sprite2D" parent="."]
 visible = false
