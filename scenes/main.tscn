@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3 uid="uid://brtafaefsfta0"]
+
+[ext_resource type="PackedScene" uid="uid://cyg24yqc1nbsh" path="res://prefabs/penguin.tscn" id="1_xske8"]
+[ext_resource type="Texture2D" uid="uid://oipgpf5owrrn" path="res://sprites/panda.png" id="2_q7n7c"]
+[ext_resource type="Script" path="res://addons/dialogic/Events/Text/node_dialog_text.gd" id="3_qpcjf"]
+[ext_resource type="Script" path="res://addons/dialogic/Events/Character/node_portrait_container.gd" id="4_y6s5h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tnxbh"]
+atlas = ExtResource("2_q7n7c")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ffwti"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tnxbh")
+}],
+"loop": true,
+"name": &"Tag",
+"speed": 10.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="PenguinPlayer" parent="." instance=ExtResource("1_xske8")]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(181, 327)
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_ffwti")
+animation = &"Tag"
+metadata/_aseprite_wizard_config_ = {
+"layer": "",
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"op_exp": false,
+"source": "C:/Users/mikip/Documents/Art/panda.ase"
+}
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 520.0
+offset_right = 772.0
+offset_bottom = 600.0
+color = Color(0.141176, 0.317647, 0.545098, 1)
+
+[node name="DialogicNode_DialogText" type="RichTextLabel" parent="Control"]
+layout_mode = 0
+offset_left = 274.0
+offset_top = 520.0
+offset_right = 774.0
+offset_bottom = 600.0
+text = "asdf"
+script = ExtResource("3_qpcjf")
+
+[node name="DialogicNode_PortraitContainer" type="Control" parent="Control"]
+anchors_preset = 0
+offset_left = 233.0
+offset_top = 540.0
+offset_right = 273.0
+offset_bottom = 580.0
+script = ExtResource("4_y6s5h")
+
+[node name="DialogicNode_PortraitContainer2" type="Control" parent="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 785.0
+offset_top = 536.0
+offset_right = 825.0
+offset_bottom = 576.0
+script = ExtResource("4_y6s5h")
+position_index = 1

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FirstGame"
-run/main_scene="res://main.tscn"
+run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -22,10 +22,10 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 [dialogic]
 
 editor/character_preview_mode=1
-editor/current_editor=&"Timeline Editor"
+editor/current_editor=&"Character Editor"
 editor/current_resources={
 "Character Editor": "res://penguin.dch",
-"Timeline Editor": "res://timeline.dtl"
+"Timeline Editor": "res://dialog/panda-timeline.dtl"
 }
 animations/join_default_length=0.5
 animations/leave_default_length=0.5
@@ -59,7 +59,7 @@ version_control/autoload_on_startup=true
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogic/plugin.cfg")
 
 [input]
 

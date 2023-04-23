@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://qlks3r5nvti4"]
+
+[ext_resource type="PackedScene" uid="uid://cyg24yqc1nbsh" path="res://prefabs/penguin.tscn" id="1_qhkc2"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("1_qhkc2")]
