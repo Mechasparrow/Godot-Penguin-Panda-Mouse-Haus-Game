@@ -5,6 +5,8 @@ extends Control
 
 var panelItem: UsableItem
 
+#TODO add handling when the person has this particular item equipped
+
 func spawn_item():
 	assert (equippedItem != null, "ERROR: Plase provide a equipped item in the Godot Editor")
 
