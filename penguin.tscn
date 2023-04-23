@@ -1,0 +1,79 @@
+[gd_scene load_steps=9 format=3 uid="uid://cyg24yqc1nbsh"]
+
+[ext_resource type="Texture2D" uid="uid://b0sykhfbv254x" path="res://penguin.png" id="1_ormst"]
+[ext_resource type="Script" path="res://scripts/penguin.gd" id="2_txbyh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e001c"]
+atlas = ExtResource("1_ormst")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ceww7"]
+atlas = ExtResource("1_ormst")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ialst"]
+atlas = ExtResource("1_ormst")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6qd5"]
+atlas = ExtResource("1_ormst")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_712y0"]
+atlas = ExtResource("1_ormst")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8e0jn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e001c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ceww7")
+}],
+"loop": true,
+"name": &"down",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ialst")
+}],
+"loop": true,
+"name": &"left",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6qd5")
+}],
+"loop": true,
+"name": &"right",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_712y0")
+}],
+"loop": true,
+"name": &"up",
+"speed": 10.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+position = Vector2(507, 337)
+scale = Vector2(5.26562, 5.26562)
+sprite_frames = SubResource("SpriteFrames_8e0jn")
+animation = &"down"
+script = ExtResource("2_txbyh")
+metadata/_aseprite_wizard_config_ = {
+"layer": "",
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"op_exp": false,
+"source": "C:/Users/mikip/Documents/Art/penguin.ase"
+}
