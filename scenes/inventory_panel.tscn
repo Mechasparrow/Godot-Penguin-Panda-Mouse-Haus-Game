@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://b11ix0gfejh54"]
+
+[ext_resource type="Script" path="res://scenes/inventory_panel.gd" id="1_3smde"]
+[ext_resource type="PackedScene" uid="uid://cnfv4pv2vp8f0" path="res://items/SwordScene.tscn" id="2_tu3su"]
+
+[node name="InventoryPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 345.0
+offset_top = 533.0
+offset_right = 385.0
+offset_bottom = 573.0
+scale = Vector2(2.24, 2.24)
+script = ExtResource("1_3smde")
+inventoryPosition = 1
+equippedItem = ExtResource("2_tu3su")
+
+[node name="Selected" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 355.0
+offset_top = 585.0
+offset_right = 395.0
+offset_bottom = 625.0
+scale = Vector2(1, 0.16)
+color = Color(0.698039, 0.560784, 0, 1)
+
+[node name="Unselected" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 0.999756
+offset_right = 41.0
+offset_bottom = 40.9998
+scale = Vector2(1, 0.16)
+color = Color(0, 0, 0, 1)
+
+[node name="MainRect" type="ColorRect" parent="."]
+layout_mode = 2
+offset_left = 1.00006
+offset_top = 6.99982
+offset_right = 41.0001
+offset_bottom = 46.9998
+color = Color(0.576471, 0.576471, 0.576471, 1)
+
+[node name="InventoryPosition" type="Label" parent="."]
+layout_mode = 2
+offset_left = 35.0002
+offset_right = 75.0002
+offset_bottom = 26.0
+scale = Vector2(0.393396, 0.342421)
+text = "1"

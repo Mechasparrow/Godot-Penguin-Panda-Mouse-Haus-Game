@@ -22,10 +22,10 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 [dialogic]
 
 editor/character_preview_mode=1
-editor/current_editor=&"Character Editor"
+editor/current_editor=&"Timeline Editor"
 editor/current_resources={
-"Character Editor": "res://penguin.dch",
-"Timeline Editor": "res://dialog/panda-timeline.dtl"
+"Character Editor": "res://dialog/panda.dch",
+"Timeline Editor": "res://dialog/timeline.dtl"
 }
 animations/join_default_length=0.5
 animations/leave_default_length=0.5
@@ -43,7 +43,7 @@ text/autocontinue_delay=2.0
 glossary/default_case_sensitive=true
 layout/mode=0
 variables={}
-editor/timeline_editor_mode=0
+editor/timeline_editor_mode=1
 editor/last/resources=["res://penguin.dch"]
 editor/visual_timeline_editor_sidebar=200.0
 text/autocontinue=true

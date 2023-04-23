@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnfv4pv2vp8f0"]
+
+[ext_resource type="Script" path="res://scripts/UsableItem.gd" id="1_i3mfv"]
+[ext_resource type="Texture2D" uid="uid://oipgpf5owrrn" path="res://sprites/panda.png" id="2_qhui0"]
+
+[node name="SwordScene" type="Node2D"]
+script = ExtResource("1_i3mfv")
+
+[node name="Panda" type="Sprite2D" parent="."]
+scale = Vector2(-1.004, 1)
+texture = ExtResource("2_qhui0")

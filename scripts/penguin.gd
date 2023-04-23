@@ -1,9 +1,11 @@
 class_name Penguin extends AnimatedSprite2D
 
-var timeline : DialogicTimeline = load("res://dialog/timeline.dtl")
 
-func _ready():
-	Dialogic.start_timeline(timeline)
+#var timeline : DialogicTimeline = load("res://dialog/timeline.dtl")
+
+#func _ready():
+#	Dialogic.start_timeline(timeline)
+
 
 var waddle_side = "none"
 
